@@ -4,6 +4,7 @@ import Agregar from './components/AgregarP.jsx'
 import DocsContainer from './components/DocsContainer.jsx'
 import Home from './components/Home.jsx'
 import MaterialInet from './components/MaterialInet.jsx'
+import AboutMe from './components/AboutMe.jsx'
 import Error from './components/Error.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css'
@@ -24,6 +25,7 @@ function App() {
     <Route exact path='/inet' element={<MaterialInet/>} />
     <Route exact path='/manual/:id' element={<DocsContainer/>} />
     <Route path='*' element={<Error />} />
+    <Route path='AboutMe' element={<AboutMe/>} />
     </Routes>
     </BrowserRouter>
     <div className="footer">Footer</div>
