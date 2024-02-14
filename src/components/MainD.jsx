@@ -15,7 +15,7 @@ const MainD = () => {
       
     </div>
     <div className="animaD">
-caca
+
       <img src={<MarioAnimado/>} alt="" />
     </div>
     </div>
