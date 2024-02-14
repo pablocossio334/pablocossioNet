@@ -49,8 +49,10 @@ const DocsContainer = () => {
       
     </div>
        </div>
-      
-    <MainD/>
+      <div className="soloEnPc">
+      <MainD />
+      </div>
+   
     </div>
   );
 };
