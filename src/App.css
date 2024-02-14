@@ -473,6 +473,10 @@ transform: translateY(-1rem);
     height: 100%;
     width: 100%;
   }
+  .linksD{
+    margin-top: 2rem;
+    height: auto;
+  }
 
 .linkD{
   width: 7rem;
@@ -483,7 +487,8 @@ transform: translateY(-1rem);
   display:none!important;
 }
 .mainTemas{
-width: 100%;
+margin-top: 3rem;
+  width: 100%;
 }
 .contenedorP{
   background-image: url("assets/fondoMario.jpg");
@@ -495,6 +500,7 @@ width: 100%;
 }
 .mainTemas{
   background:none;
+  margin-bottom: 4rem;
   
 }
 .main{
