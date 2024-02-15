@@ -8,8 +8,8 @@ const MainD = () => {
   return (
     <div className="mainDerecha">
       <div className="linksD">
-      <div className="linkD"><img src={Crea} alt="" /></div>
-      <div className="linkD"><img src={Apuntes} alt="" /></div>
+      <a href='https://estudiantes.ceibal.edu.uy/' className="linkD" target="_blank"><img src={Crea} alt="" /></a>
+      <a href='https://losapuntesdemajo.vercel.app/' className="linkD" target="_blank"><img src={Apuntes} alt="" /></a>
       <div className="linkD"><img src={CuboAmarillo} alt="" /></div>
       <div className="linkD"><img src={CuboAmarillo} alt="" /></div>
       

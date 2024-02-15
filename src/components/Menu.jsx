@@ -10,7 +10,7 @@ const Menu = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link as={Link}   to={'/'} >Inicio</Nav.Link>
+          <Nav.Link as={Link}   to={'/'} >INICIO</Nav.Link>
           
           <NavDropdown title="MANUALES" id="basic-nav-dropdown">
             <NavDropdown.Item as={Link} to={'/manual/java'} >JAVA</NavDropdown.Item>

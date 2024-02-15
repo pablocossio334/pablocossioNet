@@ -20,6 +20,7 @@ function MenuMovil() {
             <NavDropdown.Item as={Link} to={'/manual/bd'} >BASE DE DATOS</NavDropdown.Item>
             <NavDropdown.Item as={Link} to={'/manual/dw'} >DESARROLLO WEB</NavDropdown.Item>
             <NavDropdown.Item as={Link} to={'/manual/jgithub'} >GitHUB</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to={'/AboutMe'} >ACERCA DE MI</NavDropdown.Item>
           </NavDropdown>
   
         </Nav>

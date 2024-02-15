@@ -232,6 +232,12 @@ transform: translateY(-1rem);
     font-family: 'Protest Riot', sans-serif;
     transition-duration:  1s;
   }
+  h1{
+    font-family: 'Protest Riot', sans-serif;
+  }
+  h2{
+    font-family: 'Protest Revolution', sans-serif;
+  }
   .tema:hover{
 
     
@@ -442,12 +448,59 @@ transform: translateY(-1rem);
   height: 480px;
   background-color: rgba(255, 255, 255, 0.5); /* Color blanco con 50% de transparencia */
 }
+.curriculum{
+  display:flex;
+  width: 80%;
+  height: 90%;
+  overflow: auto;
+  flex-direction: column;
+ }
+.curriculum h1{
+  width: 100%;
+  text-align: center;
+}
+.descripcion{
+  display:flex;
+  align-items: center;
+}
+.imagenes{
+  height: 100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio{
+  margin-top: 2rem;
+  width: 15rem;
+  height: 15rem;
+  border:2px solid red;
+}
+
+.imagenes img{
+  
+  margin-right: 2rem;
+  border-radius: 50%;
+  height: 15rem;
+  width: 15rem;
+
+}
 @media (max-width: 700px) {
   #root{
     width:auto;
     height: auto;
     
     
+  }
+  .mainCentro{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mainCentro img{
+    margin-bottom: 2rem;
   }
   .navbar-collapse{
     width: 4rem;
