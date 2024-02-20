@@ -4,7 +4,7 @@
 #root{
   width: 98%;
   height: 98%;
-  
+ 
   
 }
 .contenedorP{
@@ -18,8 +18,23 @@
   border:2px solid black;
   width: 100%;
 }
+.login{
+  color:white;
+  height: 100%;
+  display:flex;
+  align-items: center;
+  margin-left: auto;
+  font-size: 2rem;
+  transition-duration:1s;
+}
+.login:hover{
+  transform: rotateY(180deg);
+  color:red;
+  cursor:pointer;
+}
 .menuComun{
   display:flex;
+ 
 }
 .menuMovil{
  
@@ -426,9 +441,33 @@ transform: translateY(-1rem);
 /*CAROUSEL*/
 
 .footer
-{
-  
+{height: 3rem;
+  background-color: black;
   color:white;
+  display:flex;
+}
+.footer-izquierda
+{
+  margin-right: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.footer-redes{
+  height: 100%;
+  width: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+.red{
+  margin-left:1rem;
+}
+.red:hover{
+  transform: scale3d(1.2, 1.2, 1.2);
+  cursor:pointer;
 }
 .listaIcono {
   list-style-image: url('https://i.pinimg.com/564x/ac/da/32/acda326868c9cba424c8059d1853c3bb.jpg');

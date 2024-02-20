@@ -4,9 +4,12 @@ body{
   display:flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(214, 9, 9);
+  background-color:black!important;
 }
 
+*{
+ 
+}
 @media (max-width: 380px) {
 body{
   height:  auto;

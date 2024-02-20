@@ -5,6 +5,7 @@ import DocsContainer from './components/DocsContainer.jsx'
 import Home from './components/Home.jsx'
 import MaterialInet from './components/MaterialInet.jsx'
 import AboutMe from './components/AboutMe.jsx'
+import Footer from './components/Footer.jsx'
 import Error from './components/Error.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css'
@@ -28,7 +29,7 @@ function App() {
     <Route path='/AboutMe' element={<AboutMe/>} />
     </Routes>
     </BrowserRouter>
-    <div className="footer">Footer</div>
+    <Footer/>
     </div>
   )
 }
