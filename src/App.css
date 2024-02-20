@@ -4,14 +4,18 @@
 #root{
   width: 98%;
   height: 98%;
- 
+  display:flex;
+  margin-left:auto;
+  align-items: center;
+  justify-content: center;
+
   
 }
 .contenedorP{
   background-image: url("assets/fondoMario.jpg");
   background-size: cover;
   height: 100%;
-  width: 100%;
+  width: 98%;
 }
 .cabecera{
   height: 10%;
@@ -102,7 +106,8 @@
   flex-wrap: wrap;
   animation: aparecerDesdeDerecha 1s ease-in-out;
   width: 100%;
-  height: 83%;
+  height: 86%;
+  
   
 }
 
@@ -441,7 +446,8 @@ transform: translateY(-1rem);
 /*CAROUSEL*/
 
 .footer
-{height: 3rem;
+{ height: 2rem;
+  margin-top: auto;
   background-color: black;
   color:white;
   display:flex;
@@ -489,6 +495,8 @@ transform: translateY(-1rem);
 }
 .curriculum{
   display:flex;
+  align-items: center;
+  justify-content: center;
   width: 80%;
   height: 90%;
   overflow: auto;
@@ -521,17 +529,102 @@ transform: translateY(-1rem);
   
   margin-right: 2rem;
   border-radius: 50%;
-  height: 15rem;
-  width: 15rem;
+  height: 10rem;
+  width: 10rem;
 
 }
 @media (max-width: 700px) {
+  body{
+    width: 100%;
+  }
+  .contenedorP{
+    width: 100%;
+    height:100vh ;
+    overflow: auto;
+  }
+
+  
+  .menuComun{
+    display:none;
+  }
+  .menuMovil{
+    display:flex;
+    }
+
+    .navbarLogo{
+      height: 80%;
+      width: 80%;
+    }
+    .mainIzquierda{
+      width: 100%;
+    }
+    
+    .main{
+    display: flex;
+    height: auto;
+      width: 100%;
+      
+    }
+    .mainICentro{
+      width: 100%;
+    }
+
+    .marioC{
+      display:none;
+    }
+    .mainTemas{
+      margin-top: 2rem;
+        width: 100%;
+        background-color:rgba(0, 0, 0, 0)
+      }
+    .temas{
+     height: auto;
+     margin-bottom: 2rem;
+     
+    }
+     .tema{
+      width: 8rem;
+      height: 8rem;
+     } 
+
+    .mainDerecha{
+    width:100% ;
+      height: 15rem;
+    }
+    .linksD{
+      width: 100%;
+      height: 100%;
+    }
+    .animaD{
+      display:none;
+      height: auto;
+    
+    }
+    .curriculum{
+      height: auto;
+      width: 100%;
+    }
+}
+@media (max-width: 359px) {
+
+  
+ body{
+  
+  height: auto;
+  width: auto;
+  }
   #root{
     width:auto;
     height: auto;
-    
+  
     
   }
+  .contenedorP{
+    height: auto;
+    width: auto;
+  }
+ 
+  
   .mainCentro{
     width: 100%;
     display:flex;
@@ -588,25 +681,25 @@ transform: translateY(-1rem);
 }
 .mainTemas{
 margin-top: 3rem;
+height:auto;
   width: 100%;
+  background-color:transparent;
+}
+.temas{
+  background-color: none;
+  height: auto;
 }
 .contenedorP{
   background-image: url("assets/fondoMario.jpg");
   background-size: cover;
- 
- 
   height: auto;
   
 }
-.mainTemas{
-  background:none;
-  margin-bottom: 4rem;
-  
-}
+
 .main{
   height: auto;
   flex-direction: row;
-  border:2px solid black;
+ 
 }
 .mainIzquierda{
  display:none;

@@ -35,7 +35,7 @@ const DocsContainer = () => {
   }, [id]);
 
   if (respuesta==0) {
-    return <div>Loading...</div>;
+    return <div className='main'><h1>Loading...</h1></div>;
   }
   else if(respuesta==2)
   return <Error/>

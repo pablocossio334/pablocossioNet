@@ -45,7 +45,7 @@ const AgregarP = () => {
         await updateDoc(docRef, updatedData);
 
         setTitulo('');
-        setImagen('');
+       
         setLink('');
 
         alert('Página agregada exitosamente');

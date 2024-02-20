@@ -11,12 +11,13 @@ const pagina1 = () => {
     <div className='slide'>
 <div className="slideCont">
    <h1 className="tituloSlide">MANUALES</h1>
-   <div className="iconSlide"><Link   to={'/manual/java'} ><img src={logoJava} alt="" /><div className="iconSlideTitulo">Manual Java</div></Link></div>
-   <div className="iconSlide"><img src={pensamientoC} alt="" /><div className="iconSlideTitulo">Pensamiento Computacional</div></div>
-   <div className="iconSlide"><img src={bd} alt="" /><div className="iconSlideTitulo">Base de datos</div></div>
-   <div className="iconSlide"><img src={cs} alt="" /><div className="iconSlideTitulo">C#</div></div>
-   <div className="iconSlide"><img src={CSS} alt="" /><div className="iconSlideTitulo">Desarrollo Web</div></div>
-   <div className="iconSlide"><img src={Github} alt="" /><div className="iconSlideTitulo">Github</div></div>
+  <div className="iconSlide"><Link   to={'/manual/java'} ><img src={logoJava} alt="" /><div className="iconSlideTitulo">Manual Java</div></Link></div>
+  <div className="iconSlide"><Link   to={'/manual/pcomputacional'} ><img src={pensamientoC} alt="" /><div className="iconSlideTitulo">Pensamiento Computacional</div></Link></div>
+  <div className="iconSlide"><Link   to={'/manual/bd'} ><img src={bd} alt="" /><div className="iconSlideTitulo">Base de datos</div></Link></div>
+  <div className="iconSlide"><Link   to={'/manual/Csharp'} ><img src={cs} alt="" /><div className="iconSlideTitulo">C#</div></Link></div>
+  <div className="iconSlide"><Link   to={'/manual/dw'} ><img src={CSS} alt="" /><div className="iconSlideTitulo">Desarrollo web</div></Link></div>
+  <div className="iconSlide"><Link   to={'/manual/jgithub'} ><img src={Github} alt="" /><div className="iconSlideTitulo">Github</div></Link></div>
+   
   
 </div>
 
