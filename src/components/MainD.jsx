@@ -14,11 +14,12 @@ const MainD = () => {
       <div className="linkD"><img src={CuboAmarillo} alt="" /></div>
       
     </div>
-    <div className="animaD">
-
-      <img src={<MarioAnimado/>} alt="" />
+    <div className="EspacioPublicitario">
+      <h2>Espacio Publicitario</h2>
     </div>
+   
     </div>
+    
   )
 }
 
