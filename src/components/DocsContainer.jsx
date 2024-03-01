@@ -9,8 +9,15 @@ const DocsContainer = () => {
   const { id } = useParams();
   const [datos, setDatos] = useState(null);
   const [respuesta,setRespuesta]=useState(0);
+  const [paginas,setPaginas]=useState(null);
   
-  
+  const ordenarPaginas = (paginasD) => {
+    const paginasOrdenadas = [...paginasD]; // Crear una copia del arreglo original
+    paginasOrdenadas.sort((a, b) => a.index - b.index); // Ordenar el arreglo por el campo 'index'
+    setPaginas(paginasOrdenadas); // Actualizar el estado 'paginas' con el arreglo ordenado
+  };
+
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -19,6 +26,7 @@ const DocsContainer = () => {
         const docSnap = await getDoc(docRef);
         if (docSnap.exists()) {
           const data = docSnap.data();
+          ordenarPaginas(data.paginas);
           setDatos(data);
           setRespuesta(1);
         } else {
@@ -46,7 +54,7 @@ const DocsContainer = () => {
        <h1 className='tituloTemas'>MANUAL DE {datos.titulo}</h1>
        <div className="temas">
       
-        {datos.paginas.map((pagina, index) => (
+        {paginas && paginas.map((pagina, index) => (
           <Docs
           pagina={pagina}
           

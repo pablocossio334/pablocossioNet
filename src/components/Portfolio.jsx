@@ -6,6 +6,7 @@ const Portfolio = () => {
   return (
    <div className="porfolio">
     <img className='fotitomia' alt="" />
+    
     <Proyectos/>
    </div>
   )
