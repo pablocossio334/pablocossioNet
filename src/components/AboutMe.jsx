@@ -1,7 +1,7 @@
 import React from 'react'
 import Yo from '../assets/yo.jpg'
 import Curriculum from './Curriculum.jsx'
-import Portfolio from './portfolio.jsx'
+import Portfolio from './Portfolio.jsx'
 
 const AboutMe = () => {
   return (
