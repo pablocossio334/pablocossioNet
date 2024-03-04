@@ -673,11 +673,19 @@ margin-left: auto;
     .mainIzquierda{
       width: 100%;
     }
-    
+    .porfolio{
+      margin-top: 1rem;
+    }
+   .linkD{
+    height: 45%;
+    width: 35%;
+   } 
     .main{
     display: flex;
     height: auto;
       width: 100%;
+      
+      justify-content: center;
       
     }
     .mainICentro{
