@@ -46,7 +46,7 @@ const DocsContainer = () => {
     return <div className='main'><h1>Loading...</h1></div>;
   }
   else if(respuesta==2)
-  return <Error/>
+  return <Error/>//error
   else
   return (
     <div className='main'>
