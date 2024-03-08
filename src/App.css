@@ -637,6 +637,24 @@ margin-left: auto;
   width: 10rem;
 
 }
+.loginUser{
+  background-color:black;
+  color:rgb(193, 171, 171);
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+ border-radius: 10px;
+  
+}
+.buttons{
+  display:flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.buttons Button{
+  margin-left:4rem;
+}
 @media (max-width: 700px) {
   body{
     width: 100%;

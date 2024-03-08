@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState ,useEffect} from 'react'
 import Navbar from './components/Navbar.jsx'
 import Agregar from './components/AgregarP.jsx'
 import DocsContainer from './components/DocsContainer.jsx'
@@ -7,7 +7,7 @@ import MaterialInet from './components/MaterialInet.jsx'
 import AboutMe from './components/AboutMe.jsx'
 import Footer from './components/Footer.jsx'
 import Error from './components/Error.jsx'
-
+import AdminManuales from './components/AdminManuales.jsx'
 import Curriculum from './components/Curriculum.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css'
@@ -29,7 +29,7 @@ function App() {
     <Route exact path='/manual/:id' element={<DocsContainer/>} />
     <Route path='*' element={<Error />} />
     <Route path='/AboutMe' element={<AboutMe/>} />
-    <Route path='/Culo' element={<Curriculum/>} />
+    <Route path='/Admin/:manual' element={<AdminManuales/>} />
     </Routes>
     </BrowserRouter>
     <Footer/>
