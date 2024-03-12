@@ -9,6 +9,7 @@ import Footer from './components/Footer.jsx'
 import Error from './components/Error.jsx'
 import AdminManuales from './components/AdminManuales.jsx'
 import Curriculum from './components/Curriculum.jsx'
+import ListaManuales from './components/ListAdminManuales.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css'
 import './components/Home.jsx'
@@ -30,6 +31,7 @@ function App() {
     <Route path='*' element={<Error />} />
     <Route path='/AboutMe' element={<AboutMe/>} />
     <Route path='/Admin/:manual' element={<AdminManuales/>} />
+    <Route path='/listaManuales' element={<ListaManuales/>} />
     </Routes>
     </BrowserRouter>
     <Footer/>

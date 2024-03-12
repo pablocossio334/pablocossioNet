@@ -22,7 +22,7 @@
   width: 100%;
 }
 .login{
-  color:white;
+  color:rgb(226, 17, 17);
   height: 100%;
   display:flex;
   align-items: center;
@@ -30,9 +30,22 @@
   font-size: 2rem;
   transition-duration:1s;
 }
+.loginVerde{
+  
+  color:green;
+  height: 100%;
+  display:flex;
+  align-items: center;
+  margin-left: auto!important;
+  font-size: 2rem;
+}
+.loginVerde:hover{
+  color:white;
+  cursor:pointer;
+}
 .login:hover{
   transform: rotateY(180deg);
-  color:red;
+  color:rgb(234, 217, 217);
   cursor:pointer;
 }
 .menuComun{
@@ -327,6 +340,50 @@ transform: translateY(-1rem);
     height: 15%;
     font-size: 2rem;
   }
+ .listaManuales,
+ .listaCapitulos
+ {
+
+  height: 100%;
+  width: 50%;
+  border:2px solid blue;
+ align-items: center;
+  display:flex;
+  flex-direction: column;
+  
+
+ }
+ .tablaManuales{
+  width: 40%;
+ }
+ .tablaManuales th{
+  background-color: black;
+  color:white;
+
+ }
+ .tablaManuales td
+ {
+  border:2px solid black;
+  text-align: center;
+  background-color:white;
+ }
+ .imagenManual{
+  height: 4rem;
+ }
+ 
+.temasManuales{
+  
+  height: 90%;
+  overflow: auto;
+}
+.modal-body{
+  background-color: rgba(14, 14, 14, 0.874);
+  display:flex;
+  flex-direction: column;
+  color:white;
+  text-align: center;
+}
+
   @keyframes aparecerDesdeDerecha {
     from {
       transform: translateX(100%);

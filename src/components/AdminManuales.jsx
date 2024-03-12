@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { getAuth, onAuthStateChanged, signOut } from 'firebase/auth';
+import {Link} from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 const AdminManuales = () => {
   const [user, setUser] = useState(null);
@@ -28,6 +29,7 @@ const AdminManuales = () => {
           <p>El usuario {user.email} está logueado</p>
           <button onClick={handleSignOut}>Desloguear</button>
          <h1>el manual es{manual}</h1>
+         
         </div>
 
 
