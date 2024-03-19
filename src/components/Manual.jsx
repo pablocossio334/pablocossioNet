@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import ModalAgregar from './ModalAgregar.jsx';
+
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import AgregarP from './AgregarP.jsx';
