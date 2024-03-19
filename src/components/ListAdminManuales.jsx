@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { getFirestore, collection, getDocs } from 'firebase/firestore';
-import ListaCap from './AdminCap.jsx'
+import ManualContainer from './ManualContainer';
 
 const ListAdminManuales = () => {
   const [manuales, setManuales] = useState([]);
-  const [manual, setManual] = useState('');
+  const [manual, setManual] = useState(null);
   useEffect(() => {
     const obtenerManuales = async () => {
       try {
@@ -26,39 +26,40 @@ const ListAdminManuales = () => {
 
   return (
     <div className="main">
-     <div className="listaManuales">
-     <h1>lista manuales</h1>
-     <table className='tablaManuales'>
-        <thead>
-          <tr>
-            <th>Id</th>
-            <th>Título</th>
-            <th>Imagen</th>
-            <th></th>
-          
-          </tr>
-        </thead>
-        <tbody>
-          {manuales.map(manual => (
+      <div className="listaManuales">
+        <h1>Lista de manuales</h1>
+        <table className='tablaManuales'>
+          <thead>
             <tr>
-              <td >{manual.id}</td>
-              <td>{manual.titulo ? manual.titulo : "Sin título"}</td>
-              <td>{manual.imagen ? <img className='imagenManual' src={manual.imagen} alt={manual.id} /> : "sin imagen" }</td>
-              <td><button onClick={()=>{setManual(manual)}}>Modificar</button></td>
+              <th>Id</th>
+              <th>Título</th>
+              <th>Imagen</th>
+              <th></th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {manuales.map(manual => (
+              <tr key={manual.id}>
+                <td>{manual.id}</td>
+                <td>{manual.titulo ? manual.titulo : "Sin título"}</td>
+                <td>{manual.imagen ? <img className='imagenManual' src={manual.imagen} alt={manual.id} /> : "Sin imagen" }</td>
+                <td><button onClick={() => {setManual(manual.titulo.toLowerCase())}}>Modificar</button></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
 
-      <button>Agregar +</button>
+        <button>Agregar +</button>
 
+        
 
-     </div>
-   <ListaCap
-   manual ={manual}/>
+      </div>
+
+      {manual === null ? <p>Error: No se ha seleccionado ningún manual</p> : <ManualContainer manual={manual}/>}
     </div>
   );
 }
 
 export default ListAdminManuales;
+
 

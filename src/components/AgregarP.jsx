@@ -11,6 +11,7 @@ const AgregarP = ({ manual }) => {
   const [datos, setDatos] = useState(null);
   const [visible, setVisible] = useState('block');
   const [numeroExistente, setNumeroExistente] = useState(false);
+  
 
   useEffect(() => {
     setVisible('block');
@@ -88,9 +89,9 @@ const AgregarP = ({ manual }) => {
       style={{ display: visible, position: 'initial' }}
     >
       <Modal.Dialog>
-        <Modal.Header closeButton>
-          <Modal.Title>Modal title</Modal.Title>
-        </Modal.Header>
+        
+          <h1>Agregar Tema {manual}</h1>
+       
 
         <Modal.Body>
           <label htmlFor="numero">Número</label>
