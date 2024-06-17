@@ -1,12 +1,20 @@
 import React from 'react';
 
-const Docs = ({ pagina }) => {
+const Docs = ({ pagina ,color}) => {
   
+console.log(color);
   
   return (
-    <a href={pagina.link} className="tema" target="_blank">
-    <img src={pagina.imagen} alt="pagina.tema" />
-    <p className='temaTitulo'>{pagina.index}-{pagina.titulo}</p>
+    <a href={pagina.link} 
+    className={`tema ${color}`}
+    target="_blank"
+    style={{ backgroundImage: `url(${pagina.imagen})`}}
+    >
+     
+      <div className="numeroTema">TEMA {pagina.index}</div>
+      <div className="temaTitulo"> {pagina.titulo}</div>
+
+
   </a>
   );
 };

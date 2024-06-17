@@ -15,6 +15,8 @@
   
   height: 100%;
   width: 98%;
+  background-image: url("https://media.istockphoto.com/id/1305141920/es/foto/sala-de-estudio-fotogr%C3%A1fico-con-fondo-de-ladrillo-oscuro.jpg?b=1&s=170667a&w=0&k=20&c=vxplJ8V7c4aPghK1D3tm2cuiSci0KJ6tP4diXDmmJLI=");
+  background-size: cover;
 }
 .cabecera{
   height: 10%;
@@ -114,7 +116,7 @@
 }
 
 .main{
-  background-image: url("assets/fondoMario.jpg");
+  
   background-size: cover;
   display:flex;
   flex-wrap: wrap;
@@ -144,8 +146,8 @@
   height: 50%;
   justify-content:center;
   align-items:center;
-  background-image: url("assets/ladrillos.png");
-  background-size: 20% 20%;
+  
+  
 }
 .linkD{
   height: 35%;
@@ -254,19 +256,37 @@ transform: translateY(-1rem);
   }
   .mainTemas{
   
-
-    background-color: rgba(0, 0, 0, 0.3);
-    width: 75%;
+display:flex;
+flex-direction: column;
+align-items: center;
+    
+   height: 100%;
+   
+   width: 70%;
     
   }
   .tema{
-    width: 10%;
-    height: 30%;
-    margin:1rem;
-   border-radius: 1rem;
-    background-color: black;
+   
+    height: 25%;
+    width: 20%;
     font-family: 'Protest Riot', sans-serif;
+    margin-top: 0.5rem;
+   margin-left: 1rem;
+  background-size:80% 80%;
+  background-repeat:no-repeat;
+  background-position: center;
+   font-size: 1.5rem;
+   text-align: center;
+    font-weight: bold;
     transition-duration:  1s;
+    text-decoration: none;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   color:black;
+    
+    
   }
   h1{
     font-family: 'Protest Riot', sans-serif;
@@ -291,27 +311,25 @@ transform: translateY(-1rem);
    
    align-items: center;
    justify-content: center;
-    width: 100%;
-    height: 85%;
+    width: 90%;
+    height: 90%;
+   
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items:start;
+   overflow-x: auto;
+   
   }
+ 
   .tituloTemas{
     width: 100%;
     text-align: center;
     font-family: 'Protest Revolution', sans-serif;
     font:2rem;
-    
+    color:aliceblue;
     margin:0;
   }
-  .tema img{
-    padding-top: 1rem;
-    height: 50%;
-    width: 100%;
-    margin-bottom: 0.6rem;
-  }
+  
   .mainCentro{
     display:flex;
     flex-direction: column;
@@ -324,9 +342,23 @@ transform: translateY(-1rem);
     height: 80%;
     width: 40%;
   }
+  .imagenTema{
+    width: 20%;
+    height: 100%;
+    border:2px solid black;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .imagenTema img{
+    height: 80%;
+   width: 40%;
+  }
   .temaTitulo{
+    
+    margin-left: 0.5rem;
     text-align: center;
-    color:white;
+    color:rgb(10, 9, 9);
     text-decoration: none!important;
   }
   .mensajeError{
@@ -470,6 +502,7 @@ transform: translateY(-1rem);
 }
 .tituloSlide{
   width: 100%;
+  COLOR:WHITE;
   text-align: center;
 }
 
@@ -478,10 +511,26 @@ width: 8rem;
 height: 8rem;
 margin-left:2rem;
 border:2px dotted black;
-border-radius: 30%;
-background-color: rgb(247, 247, 241);
+
 background-size: cover;
 background-repeat: none;
+opacity: 0.8;
+
+}
+.iconColor1{
+  background-color:  rgb(242, 225, 175);
+}
+.iconColor2{
+  background-color:  rgb(244, 217, 236);
+}
+.iconColor3{
+  background-color: rgb(181, 213, 123);
+}
+.iconColor4{
+  background-color: rgb(237, 198, 143)
+}
+.iconColor5{
+  background-color: rgb(184, 221, 223) ;
 }
 .materias{
  
@@ -719,6 +768,8 @@ margin-left: auto;
   .contenedorP{
     width: 100%;
     height:100vh ;
+    
+    background-image: url("assets/fondoMario.jpg");
     overflow: auto;
   }
   .carousel-inner{
@@ -770,22 +821,8 @@ margin-left: auto;
     .marioC{
       display:none;
     }
-    .mainTemas{
-      margin-top: 2rem;
-      
-        width: 100%;
-        background-color:rgba(0, 0, 0, 0)
-      }
-    .temas{
-     height: auto;
-     margin-bottom: 2rem;
-     display:flex;
-     align-items: center;
-    }
-     .tema{
-      width: 8rem;
-      height: 8rem;
-     } 
+    
+     
 .EspacioPublicitario{
   height: 20rem;
 }
@@ -881,16 +918,8 @@ margin-left: auto;
 .soloEnPc{
   display:none!important;
 }
-.mainTemas{
-margin-top: 3rem;
-height:auto;
-  width: 100%;
-  background-color:transparent;
-}
-.temas{
-  background-color: none;
-  height: auto;
-}
+
+
 .contenedorP{
   background-image: url("assets/fondoMario.jpg");
   background-size: cover;
@@ -921,10 +950,7 @@ height:auto;
 
 
 
-.tema{
-  width: 6rem;
-  height: 6rem;
-}
+
 .temaTitulo{
   font-size: 0.7rem;
  

@@ -6,7 +6,7 @@ import Pagina3 from "./pagina3.jsx";
 
 const MainC = () => {
   const [pagina, setPagina] = useState(0);
-  const paginas = [<Pagina1 />];//, <Pagina2 />, <Pagina3 />
+  const paginas = [<Pagina1 />,<Pagina2/>];//, <Pagina2 />, <Pagina3 />
 
   return (
     <div className='mainICentro'>
