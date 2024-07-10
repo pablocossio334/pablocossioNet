@@ -7,7 +7,9 @@ import MainI from './MainI'
 
 const HOME = () => {
   return (
-    <div className="main"><MainI/><MainC/><MainD/></div>
+    <div className='main'>
+    <MainI/><MainC/> <MainD/>
+    </div>
   )
 }
 

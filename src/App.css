@@ -130,7 +130,7 @@
 .mainDerecha,
 .mainIzquierda
 { 
- 
+  
   width: 25%;
 
   height: 100%;
@@ -141,7 +141,7 @@
 .linksD{
   display:flex;
   flex-wrap: wrap;
-  
+ 
   width: 100%;
   height: 50%;
   justify-content:center;
@@ -150,7 +150,7 @@
   
 }
 .linkD{
-  height: 35%;
+  height: 40%;
   margin-right: 0.5rem; 
   width: 40%;
   transition: transform 0.3s ease-in-out;
@@ -166,11 +166,15 @@ transform: translateY(-1rem);
   height: 100%;
 }
 .EspacioPublicitario{
-  border:3px solid black;
+ 
   height: 50%;
   display:flex;
   align-items: center;
   justify-content: center;
+}
+.EspacioPublicitario img{
+  width: 100%;
+  height: 100%;
 }
 
 .marioC{
@@ -305,6 +309,7 @@ align-items: center;
   
   }
   
+
 
   
   .temas{
@@ -822,13 +827,10 @@ margin-left: auto;
       display:none;
     }
     
-     
-.EspacioPublicitario{
-  height: 20rem;
-}
+    
+
     .mainDerecha{
-    width:100% ;
-      height: 15rem;
+    
     }
     .linksD{
       width: 100%;

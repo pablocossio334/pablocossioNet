@@ -1,6 +1,7 @@
 import { useState ,useEffect} from 'react'
 import Navbar from './components/Navbar.jsx'
 import Agregar from './components/AgregarP.jsx'
+import MainD from './components/MainD.jsx'
 import DocsContainer from './components/DocsContainer.jsx'
 import Home from './components/Home.jsx'
 import MaterialInet from './components/MaterialInet.jsx'
@@ -22,8 +23,11 @@ function App() {
       <BrowserRouter>
     
       <Navbar/>
-      
+    
+
+    
     <Routes>
+      
     <Route exact path='/' element={<Home/>} />
     <Route exact path='/agregar' element={<Agregar/>} />
     <Route exact path='/inet' element={<MaterialInet/>} />
@@ -34,7 +38,10 @@ function App() {
     <Route path='/listaManuales' element={<ListaManuales/>} />
 
     </Routes>
+   
+    
     </BrowserRouter>
+   
     <Footer/>
     </div>
   )

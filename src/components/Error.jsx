@@ -8,7 +8,7 @@ const Error = () => {
 <MainI/>
 <div className="mainCentro">
   
-<img src={Erro} alt="" />
+<img className='imagenError'src='https://i.gifer.com/1Q8m.gif' alt="" />
 <div className="mensajeError">
 La Pagina no existe o no se a creado aun
 </div>
